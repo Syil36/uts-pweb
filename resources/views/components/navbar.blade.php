@@ -1,11 +1,8 @@
-<nav class="bg-gradient-to-r from-pink-100 via-pink-200 to-fuchsia-100 shadow-lg p-4 rounded-xl mb-6">
+<nav class="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-pink-100 via-pink-200 to-fuchsia-100 shadow-lg p-4 rounded-xl">
     <div class="container mx-auto flex items-center justify-between">
         <div class="text-pink-700 font-bold text-xl tracking-wide flex items-center gap-2">
             <!-- LaundryCare Icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M3 7h18M3 12h18M3 17h18" />
-            </svg>
+            <img src="{{ asset('assets/logo.png') }}" alt="" class="w-8 h-8 ml-4 mr-4">
             LaundryCare
         </div>
         <div class="flex space-x-6 text-sm md:text-base">

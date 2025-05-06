@@ -28,9 +28,9 @@
         <div>
             <h3 class="text-pink-500 font-semibold mb-3">Menu</h3>
             <ul class="space-y-2 text-sm">
-                <li><a href="/dashboard" class="hover:text-pink-500">Dashboard</a></li>
-                <li><a href="/profile" class="hover:text-pink-500">Profile</a></li>
-                <li><a href="/pengelolaan" class="hover:text-pink-500">Pengelolaan</a></li>
+                <li><a href="{{ url('/dashboard?username=' . urlencode(request()->query('username'))) }}" class="hover:text-pink-500">Dashboard</a></li>
+                <li><a href="{{ url('/profile?username=' . urlencode(request()->query('username'))) }}" class="hover:text-pink-500">Profile</a></li>
+                <li><a href="{{ url('/pengelolaan?username=' . urlencode(request()->query('username'))) }}" class="hover:text-pink-500">Pengelolaan</a></li>
             </ul>
         </div>
 
@@ -48,6 +48,12 @@
                     <li class="flex items-center gap-2">
                         <div class="w-3 h-3 bg-pink-500 rounded-sm"></div>
                         Jl. Kalimantan No.69, Kebonsari, Jember, Jawa Timur
+                    </li>
+                <h3 class="text-pink-500 font-semibold mb-3">Instagram</h3>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-center gap-2">
+                        <div class="w-3 h-3 bg-pink-500 rounded-sm"></div>
+                        @laundrycare.jember
                     </li>
             </ul>
         </div>
